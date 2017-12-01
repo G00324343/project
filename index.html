@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLAH</title>
+
+ <!--Script references to the bootstrap CSS, Ajax and Jequery Libarys-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+<script>
+function homeButton() {
+     $.get("/home", function(data, status){
+		//$("#about").data(data);
+		$("#home").html(data);
+        });
+}
+
+function aboutButton() {
+     $.get("/about", function(data, status){
+		//$("#about").data(data);
+		$("#about").html(data);
+        });
+}
+
+function contactButton() {
+     $.get("/contact", function(data, status){
+		//$("#about").data(data);
+		$("#contact").html(data);
+        });
+}
+
+function faqButton() {
+     $.get("/faq", function(data, status){
+		//$("#about").data(data);
+		$("#faq").html(data);
+        });
+}
+
+</script>
+   </head>
+   <body>
+<div id='cssmenu'>
+<ul>
+<!--Title for the page that is located on the left side of the nav bar-->
+<li style="float:center"><h1>BLAH!</h1></li>
+  <!--The main Navigation Bar which will load the images and content from the public folder and the app get method-->
+  <li onClick="homeButton()"><a href="#home" id="productsbutton">Home</a></li>
+  <li onClick="productButton()"><a href="#product" id="productsbutton">Products</a></li>
+  <li onClick="aboutButton()"><a href="#about" id="aboutbutton">About</a></li>
+  <li onClick="contactButton()"><a href="#contact" id="contactbutton">Contact</a></li>
+  <li onClick="faqButton()"><a href="#faq" id="faqbutton">Faq</a></li>
+ 
+</ul>
+  </div> 
+	
+  <!--The about section that the user will first see when the website is started up-->
+   <div id = "about">
+   <center><h1></h1></center>
+   <p>
+<h2>Welcome to The HomePage</h2>
+<p>Evolving from single-celled yellow organisms at the dawn of time, 
+Minions live to serve, but find themselves working for a continual series 
+of unsuccessful masters, from T. Rex to Napoleon. Without a master to grovel for, 
+the Minions fall into a deep depression. But one minion, Kevin, has a plan; 
+accompanied by his pals Stuart and Bob, Kevin sets forth to find a new evil 
+boss for his brethren to follow. Their search leads them to Scarlet Overkill, 
+the world's first-ever super-villainess.</p>
+<img src="images/minions.jpg" height= "300" width="600">
+<p>
+</div>
+<!--The footer which will say who created the site-->
+
+	 
+			<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Company Name &copy; 2017</p>
+
+			</div>
+
+			<div class="footer-right">
+
+				<form method="get" action="#">
+					<input placeholder="Search our website" name="search" />
+					<i class="fa fa-search"></i>
+				</form>
+
+			</div>
+
+		</footer>
+   </body> 
+   </html>
