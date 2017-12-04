@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 
 //app.get for Home
  app.get('/home', function (req, res) {
-res.send('Hello homey <h1>Home</h1><img src="" height="100" width="220"><h4>Plot Summary:</h4>Jack Torrance, his wife Wendy, and their young son Danny move into the Overlook Hotel, where Jack has been hired as the winter caretaker. Cut off from civilization for months, Jack hopes to battle alcoholism and uncontrolled rage while writing a play.<p> <h4>Publication History:</h4>Published in 1977, it is Kings third published novel and first hardback bestseller: the success of the book firmly established King as a preeminent author in the horror genre. The setting and characters are influenced by Kings personal experiences, including both his visit to The Stanley Hotel in 1974 and his recovery from alcoholism. ');
+res.send('Hello homey <h1>Home</h1><img src="images/minions.jpg" height="100" width="220"><h2></h2> Minions are possibly made from humans by the Minionizer, a ray gun that turns humans into Minions, as seen in Despicable Me: Minion Mayhem at Universal Studios.<p> This is generally considered as non-canon (or just something Gru invented for the express purpose of the ride).');
  })
  
  //app.get Products
@@ -29,13 +29,13 @@ res.send('Whats going on?');
  
  //app.get for Contact
  app.get('/contact', function (req, res) {
-res.send('');
+res.send('Minions are possibly made from humans by the Minionizer, a ray gun that turns humans into Minions, as seen in Despicable Me: Minion Mayhem at Universal Studios. This is generally considered as non-canon (or just something Gru invented for the express purpose of the ride).');
  }) 
  
  
  //app.get for Faq
   app.get('/faq', function (req, res) {
-res.send('<h1>Faq</h1><img src="" height="350" width="220"><h4>Plot Summary:</h4> After a serious car crash, novelist Paul Sheldon is rescued by former nurse Annie Wilkes , who claims to be his biggest fan. Annie brings him to her remote cabin to recover, where her obsession takes a dark turn when she discovers Sheldon is killing off her favorite character from his novels. As Sheldon devises plans for escape, Annie grows increasingly controlling, even violent, as she forces the author to shape his writing to suit her twisted fantasies.<p> <h4>Publication History:</h4> When King was writing Misery in 1985 he planned the book to be released under the pseudonym Richard Bachman but the identity of the pseudonym was discovered before the release of the book. ');
+res.send('<h1>Faq</h1><img src="/images/minions.jpg" height="350" width="220"><h2>Minions</h2> Minions are possibly made from humans by the Minionizer, a ray gun that turns humans into Minions, as seen in Despicable Me: Minion Mayhem at Universal Studios.<p> This is generally considered as non-canon (or just something Gru invented for the express purpose of the ride).. ');
  })
  
 
