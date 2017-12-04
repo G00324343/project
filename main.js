@@ -35,7 +35,7 @@ res.send('Minions are possibly made from humans by the Minionizer, a ray gun tha
  
  //app.get for Faq
   app.get('/faq', function (req, res) {
-res.send('<h1>Faq</h1><img src="/images/minions.jpg" height="350" width="220"><h2>Minions</h2> Minions are possibly made from humans by the Minionizer, a ray gun that turns humans into Minions, as seen in Despicable Me: Minion Mayhem at Universal Studios.<p> This is generally considered as non-canon (or just something Gru invented for the express purpose of the ride).. ');
+res.send('<h1>Faq</h1><img src="/images/mimi.jpg" height="350" width="220"><h2>Minions</h2> Minions are possibly made from humans by the Minionizer, a ray gun that turns humans into Minions, as seen in Despicable Me: Minion Mayhem at Universal Studios.<p> This is generally considered as non-canon (or just something Gru invented for the express purpose of the ride).. ');
  })
  
 
